@@ -1,0 +1,52 @@
+version : "0.0.1"
+
+services:
+  mariadb:
+    container_name: KNX-PrettyView-DB
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Europe/Vienna
+    volumes: 
+      - ./KNX-PrettyView-DB:/var/lib/mysql
+    ports: 
+      - "3306:3306"
+    networks:
+      - knx-network
+    healthcheck:
+        test: "/usr/bin/mysql --user=root --password=password --execute \"SHOW DATABASES;\""
+        interval: 3s
+        timeout: 3s
+        retries: 5
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-time-zone=+02:00']
+
+  server:
+    container_name: KNX-PrettyView-Server
+    image: biacsics/knx-pretty-view-server:v0.0.1
+    volumes:
+      - ./KNX-PrettyView-Server:/usr/src/app/environments
+    ports:
+      - "3000:3000"
+      - "80:80"
+    networks:
+      - knx-network
+    depends_on:
+      mariadb:
+        condition: service_healthy      
+
+  ui:
+    container_name: KNX-PrettyView-App
+    image: biacsics/knx-pretty-view-app:v0.0.1
+    #volumes:
+    #  - ./KNX-PrettyView-App:/usr/share/nginx/html
+    ports:
+      - "4000:80"
+    networks:
+      - knx-network
+
+networks:
+  knx-network:
+    name: knx-network
+    driver: bridge
+
+

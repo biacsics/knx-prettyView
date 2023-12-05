@@ -31,4 +31,11 @@ At the time it provides the following section:
 ### Quick Overview
 ![KNX-Pretty-View example view in edit mode](https://i.ibb.co/vPyFtwY/KNX-Visu.jpg)
 
+## First start
+If all three containers running you can access the **KNX Pretty View** over the localhost and port 4000 [http://localhost:4000](http://localhost:4000)
 
+If you run the **KNX Pretty View** the first time, the **docker-compose.yml** provides two volumes.
+* **KNX-PrettyView-DB** *(The database volume for backups. Direct access to the database files)*
+* **KNX-PrettyView-Server** *(The server volume for the environment file and certification files)*
+
+Later more ... :-)

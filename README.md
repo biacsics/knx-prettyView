@@ -36,6 +36,10 @@ At the time it provides the following section:
 ![KNX-Pretty-View example view in edit mode](https://i.ibb.co/vPyFtwY/KNX-Visu.jpg)
 
 ## First start
+Download the **docker-compose.yml** and save in into a directory.
+Run the command in the same foulder where the **docker-compose.yml** file is stored: 
+**docker compose up** 
+
 If all three containers running you can access the **KNX Pretty View** over the url:localhost and port:4000 [http://localhost:4000](http://localhost:4000)
 > **Username**: administrator **Password**: passwort
 

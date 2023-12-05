@@ -14,16 +14,21 @@ It consists of the following modules:
 * DataPointManager *(Manage the data points and write them into the database. tracked values)*
 * DataManager *(Gets the data from the KNX module and saves the data for charts into the database)*
 * REST & Socket Provider *(Communication endpoint for the web frontend)*
-* 
+
 ![The backend topology](https://i.ibb.co/0ZjVGJ0/KNX-pretty-view-server-topology.png)
 
-## KNX Pretty View web frontend
-The web frontend is developed with Angular.
-### Example view:
-![KNX-Pretty-View example view](https://i.ibb.co/vZ9NfMZ/KNX-Visu-1.jpg)
+## KNX Pretty View app
+The web frontend is developed with the [angular.io](https://angular.io/) framework.
 
-### Example view in edit mode:
-![KNX-Pretty-View example view in edit mode](https://i.ibb.co/w6CMG9D/KNX-Visu-2.jpg)
+At the time it provides the following section:
 
+* **Playground** *(The playground is for the visualisation. You can have multiple playground at the same time)*
+* **Datapoint Manager** *(Automatically retrieves recognized data points from the backend and show them in a list view)*
+* **Datapoint Trend** *(Display historical data in a multi-axis line chart)*
+* **Studio** *(**Section: SVG-Editor**(without demo data), **Template studio**(inactive), **image studio**(for background images) )*
+* **User Management** *(**Profile**(current user), **User List**)*
+
+### Quick Overview
+![KNX-Pretty-View example view in edit mode](https://i.ibb.co/vPyFtwY/KNX-Visu.jpg)
 
 

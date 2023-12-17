@@ -29,7 +29,7 @@ At the time it provides the following section:
 * **Playground** *(The playground is for the visualisation. You can have multiple playground at the same time)*
 * **Datapoint Manager** *(Automatically retrieves recognized data points from the backend and show them in a list view)*
 * **Datapoint Trend** *(Display historical data in a multi-axis line chart)*
-* **Studio** *(**Section: SVG-Editor**(without demo data), **Template studio**(inactive), **image studio**(for background images) )*
+* **Studio** **Section: SVG-Editor**(without demo data), **Template studio**(inactive), **image studio**(for background images)
 * **User Management** *(**Profile**(current user), **User List**)*
 
 ### Quick Overview

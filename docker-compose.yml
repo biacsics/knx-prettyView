@@ -22,7 +22,7 @@ services:
 
   server:
     container_name: KNX-PrettyView-Server
-    image: biacsics/knx-pretty-view-server:v0.0.2
+    image: biacsics/knx-pretty-view-server:v0.0.3
     volumes:
       - ./KNX-PrettyView-Server:/usr/src/app/environments
     ports:
@@ -36,7 +36,7 @@ services:
 
   ui:
     container_name: KNX-PrettyView-App
-    image: biacsics/knx-pretty-view-app:v0.0.2
+    image: biacsics/knx-pretty-view-app:v0.0.3
     #volumes:
     #  - ./KNX-PrettyView-App:/usr/share/nginx/html
     ports:

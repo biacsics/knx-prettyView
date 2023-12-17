@@ -3,7 +3,7 @@ version : "0.0.1"
 services:
   mariadb:
     container_name: KNX-PrettyView-DB
-    image: mariadb
+    image: mariadb:10.10.7
     environment:
       MYSQL_ROOT_PASSWORD: password
       TZ: Europe/Vienna

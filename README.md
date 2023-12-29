@@ -55,5 +55,8 @@ Later more ... :-)
 
 
 ## Update V0.0.4
-* Value tendency support for the label value (now you can display a tendency for value change with and without difference value)
+* **BugFix:** Unsubscribe boolean-switch subscriptions
+* **Feature:** Adding reload icon for label datapoint values. 
+* **Feature:** tile for reload icon, display information last data received at.  
+* **Feature:** Value tendency support for the label value (now you can display a tendency for value change with and without difference value)
  ![KNX-Pretty-View tendency](https://i.ibb.co/9T2nNX4/KNx-View-tendency.jpg)

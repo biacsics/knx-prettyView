@@ -52,3 +52,8 @@ Later more ... :-)
 
 ## old german videos from 2021
 [First look and feel **KNX Pretty View**](https://www.youtube.com/watch?v=EQ3pKWaOTY0&list=PLkmww0sGtMHCGLVOXR2k6Qp7p6WZXpO32)
+
+
+## Update V0.0.4
+* Value tendency support for the label value (now you can display a tendency for value change with and without difference value)
+ ![KNX-Pretty-View tendency](https://i.ibb.co/9T2nNX4/KNx-View-tendency.jpg)
